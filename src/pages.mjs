@@ -147,7 +147,7 @@ const home = () => {
 
 <section id="about" class="section section-grey" aria-labelledby="about-title">
   <div class="container about">
-    <div class="about-photo"><picture><source srcset="/assets/img/hero.webp" type="image/webp"><img src="/assets/img/hero.jpg" alt="Crew member clearing a front walkway with a snow blower" width="1500" height="1000" loading="lazy" decoding="async"></picture></div>
+    <div class="about-photo">${pic('job-walkway', 'Cleared walkway to a Toronto home')}</div>
     <div class="about-text">
       <h2 id="about-title" class="section-title left">A Neighbourhood Crew, Not a Call Centre</h2>
       <p>${esc(site.brand)} is a small team of workers from the GTA who take on the winter chores most homeowners would rather skip. When you call, you talk to the people who schedule the work, and the price you hear is the price you pay.</p>

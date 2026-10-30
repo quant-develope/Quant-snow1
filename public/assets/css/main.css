@@ -73,6 +73,10 @@ p { margin: 0 0 1em; }
 
 /* Hero */
 .hero { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); color: #fff; padding: 48px 0; }
+/* Desktop only: snow blower photo behind the hero, plain blue on phones and tablets */
+@media (min-width: 1001px) {
+  .hero { background: linear-gradient(rgba(17, 32, 48, .6), rgba(17, 32, 48, .6)), url(/assets/img/hero.jpg) center 40% / cover no-repeat; background: linear-gradient(rgba(17, 32, 48, .6), rgba(17, 32, 48, .6)), image-set(url(/assets/img/hero.webp) type("image/webp"), url(/assets/img/hero.jpg) type("image/jpeg")) center 40% / cover no-repeat; padding: 64px 0; }
+}
 .hero-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
 .hero-kicker { display: inline-block; background: var(--orange); padding: 4px 10px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
 .hero h1 { color: #fff; font-size: 44px; text-transform: uppercase; }
