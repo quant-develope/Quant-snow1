@@ -96,7 +96,7 @@ const home = () => {
   <div class="container hero-inner">
     <div class="hero-text">
       <p class="hero-kicker">Local Snow Removal Company · Toronto, ON</p>
-      <h1>Snow Removal &amp; Winter Handyman Services in Toronto</h1>
+      <h1>Snow Removal &amp; Winter Services in Toronto</h1>
       <p class="hero-lead">Driveways, walkways, steps, flat roofs, decks and icicles. One phone call and a local crew takes care of it, usually the same day.</p>
       <ul class="hero-checks">
         <li>${icon('check')} Free estimates over the phone</li>
@@ -228,7 +228,7 @@ ${partners()}
   return page({
     path: '/',
     title: 'Toronto Snow Removal | Driveways, Walkways, Flat Roofs & Icicles',
-    description: `Local snow removal and winter handyman services in Toronto and the GTA. Driveways, steps, flat roofs, decks, icicles and salting. Free estimate: ${site.phone.display}.`,
+    description: `Local snow removal and winter services in Toronto and the GTA. Driveways, steps, flat roofs, decks, icicles and salting. Free estimate: ${site.phone.display}.`,
     body,
     schema: [faqSchema],
   });

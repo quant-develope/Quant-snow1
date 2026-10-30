@@ -114,7 +114,7 @@ const orgSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: site.brand,
-  description: 'Residential snow removal and winter handyman services in Toronto and the GTA',
+  description: 'Residential snow removal and winter services in Toronto and the GTA',
   url: site.url,
   telephone: site.phone.tel,
   areaServed: { '@type': 'City', name: 'Toronto' },
