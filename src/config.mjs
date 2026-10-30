@@ -1,6 +1,6 @@
 // Site-wide settings. Change values here and rebuild (`npm run build`).
 export const site = {
-  brand: 'Toronto Snow Help',
+  brand: 'Toronto Snow Removal',
   // Production URL, used for canonical links, sitemap and structured data.
   url: 'https://quant-snow1.unknwn-creation.workers.dev',
   phone: { display: '(437) 535-2069', tel: '+14375352069' },

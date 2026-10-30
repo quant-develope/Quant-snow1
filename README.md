@@ -1,4 +1,4 @@
-# Toronto Snow Help
+# Toronto Snow Removal
 
 Snow removal site deployed as the Cloudflare Worker `quant-snow1`
 (https://quant-snow1.unknwn-creation.workers.dev/). Cloudflare builds it from `main` with `npm run build`.

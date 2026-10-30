@@ -93,7 +93,7 @@ const faqs = [
 const home = () => {
   const body = `
 <section class="hero">
-  <picture class="hero-bg"><source srcset="/assets/img/hero.webp" type="image/webp"><img src="/assets/img/hero.jpg" alt="" width="1024" height="576" fetchpriority="high"></picture>
+  <picture class="hero-bg"><source srcset="/assets/img/hero.webp" type="image/webp"><img src="/assets/img/hero.jpg" alt="" width="1500" height="1000" fetchpriority="high"></picture>
   <div class="container hero-inner">
     <div class="hero-text">
       <p class="hero-kicker">Local Snow Removal Company · Toronto, ON</p>
@@ -226,7 +226,7 @@ const home = () => {
 
   return page({
     path: '/',
-    title: 'Snow Removal Toronto | Driveways, Walkways, Flat Roofs & Icicles | Toronto Snow Help',
+    title: 'Toronto Snow Removal | Driveways, Walkways, Flat Roofs & Icicles',
     description: `Local snow removal and winter handyman services in Toronto and the GTA. Driveways, steps, flat roofs, decks, icicles and salting. Free estimate: ${site.phone.display}.`,
     body,
     schema: [faqSchema],

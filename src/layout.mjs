@@ -63,7 +63,7 @@ const header = () => `
 </div>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="/" aria-label="${esc(site.brand)} home">${logo()}<span class="logo-text"><strong>Toronto Snow Help</strong><small>Snow Removal &amp; Winter Handyman</small></span></a>
+    <a class="logo" href="/" aria-label="${esc(site.brand)} home">${logo()}<span class="logo-text"><strong>${esc(site.brand)}</strong><small>Driveways · Walkways · Roofs · Ice</small></span></a>
     <nav class="main-nav" aria-label="Main menu">
       ${nav.map(([href, label]) => `<a href="${href}">${label}</a>`).join('')}
     </nav>
