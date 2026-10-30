@@ -34,6 +34,23 @@
     else if (leftForCall) location.href = '/interested/';
   });
 
+  // Bottom call bar: shown only while none of the page's own call buttons is on screen
+  var bar = document.querySelector('.mobile-bar');
+  var calls = document.querySelectorAll('main .btn-call');
+  if (bar && calls.length && 'IntersectionObserver' in window) {
+    var visible = [];
+    var barIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var i = visible.indexOf(en.target);
+        if (en.isIntersecting && i < 0) visible.push(en.target);
+        if (!en.isIntersecting && i >= 0) visible.splice(i, 1);
+      });
+      bar.classList.toggle('show', visible.length === 0);
+    });
+    calls.forEach(function (el) { barIO.observe(el); });
+    document.documentElement.classList.add('bar-auto');
+  }
+
   // Keep ad click IDs and UTM params for the session so they reach the form
   var params = new URLSearchParams(location.search);
   var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'gclid'];
