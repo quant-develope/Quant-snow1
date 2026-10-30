@@ -2,7 +2,7 @@
 export const site = {
   brand: 'Toronto Snow Removal',
   // Production URL, used for canonical links, sitemap and structured data.
-  url: 'https://quant-snow1.unknwn-creation.workers.dev',
+  url: 'https://snow-remove.com',
   phone: { display: '(437) 535-2069', tel: '+14375352069' },
   // WhatsApp chat for the floating button (international format, digits only).
   whatsapp: '14375352069',
