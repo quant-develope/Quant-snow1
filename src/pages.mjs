@@ -193,6 +193,8 @@ const home = () => {
   </div>
 </section>
 
+${partners()}
+
 <section id="faq" class="section" aria-labelledby="faq-title">
   <div class="container narrow">
     <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
