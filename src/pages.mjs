@@ -82,7 +82,7 @@ const partners = () => `
 
 const faqs = [
   ['What does snow removal cost?', 'Every property is different, so we price each job individually. The size of the driveway or roof, the depth of the snow and any ice work all count. Call or send the form and we give you a firm number before we start.'],
-  ['Do I need to sign up for the whole winter?', 'No. We work call by call: you contact us when you need snow cleared and we book the visit. You only pay for the jobs you ask for.'],
+  ['Do I pay for each visit separately?', 'Yes. We work call by call: you contact us when you need snow cleared and we book the visit. You only pay for the jobs you ask for.'],
   ['How fast can you come?', 'Most calls are handled the same day. During a big storm the list gets longer, so call as early as you can.'],
   ['Is it safe to shovel a flat roof?', 'When done properly, yes. We use plastic shovels, leave a thin layer of snow to protect the membrane, and never chip ice off the roof surface.'],
   ['Will salt damage my concrete or hurt my dog?', 'Regular rock salt can be hard on fresh concrete and paws. Tell us when you book and we bring a gentler ice melter instead.'],
@@ -101,7 +101,7 @@ const home = () => {
       <p class="hero-lead">Driveways, walkways, steps, flat roofs, decks and icicles. One phone call and a local crew takes care of it, usually the same day.</p>
       <ul class="hero-checks">
         <li>${icon('check')} Free estimates over the phone</li>
-        <li>${icon('check')} One-time visits, no contracts</li>
+        <li>${icon('check')} Pay only for the visits you book</li>
         <li>${icon('check')} Fully insured crew</li>
         <li>${icon('check')} Evenings and weekends</li>
       </ul>
