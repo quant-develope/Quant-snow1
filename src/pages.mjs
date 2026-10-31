@@ -1,4 +1,4 @@
-import { site, services, cities } from './config.mjs';
+import { site, services, cities, beforeAfter } from './config.mjs';
 import { page, esc, icon, callBtn } from './layout.mjs';
 
 const pic = (name, alt, { eager = false, cls = '' } = {}) =>
@@ -158,6 +158,20 @@ const home = () => {
         <li>${icon('check')} Photos sent if you are not home</li>
       </ul>
       ${callBtn('Talk to Us')}
+    </div>
+  </div>
+</section>
+
+<section id="before-after" class="section" aria-labelledby="ba-title">
+  <div class="container">
+    <h2 id="ba-title" class="section-title">Before and After</h2>
+    <p class="section-intro">Photos our workers took at Toronto addresses on arrival and again once the job was done.</p>
+    <div class="ba-grid">
+      ${beforeAfter.map((p) => `
+      <div class="ba-pair">
+        <figure class="ba-shot">${pic('ba-' + p.before, 'Before: ' + p.alt)}<span class="ba-tag">Before</span></figure>
+        <figure class="ba-shot">${pic('ba-' + p.after, 'After: ' + p.alt)}<span class="ba-tag ba-tag-after">After</span></figure>
+      </div>`).join('')}
     </div>
   </div>
 </section>
