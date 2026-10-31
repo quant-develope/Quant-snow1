@@ -259,3 +259,12 @@ p { margin: 0 0 1em; }
   .mobile-bar-call { background: var(--orange); }
   .fab-whatsapp { bottom: calc(68px + env(safe-area-inset-bottom)); width: 48px; height: 48px; font-size: 26px; }
 }
+
+/* Before / after pairs */
+.ba-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+.ba-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; background: #fff; border: 1px solid var(--line); padding: 3px; }
+.ba-shot { position: relative; margin: 0; overflow: hidden; }
+.ba-shot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.ba-tag { position: absolute; top: 0; left: 0; background: var(--blue-dark); color: #fff; font: 700 13px/1 var(--head); letter-spacing: .05em; text-transform: uppercase; padding: 7px 12px; }
+.ba-tag-after { background: var(--orange); }
+@media (min-width: 900px) { .ba-grid { grid-template-columns: repeat(2, 1fr); gap: 26px; } }

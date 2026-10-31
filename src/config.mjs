@@ -93,3 +93,12 @@ export const cities = [
   'Vaughan', 'Markham', 'Richmond Hill', 'Thornhill', 'Woodbridge', 'Oakville', 'Burlington',
   'Pickering', 'Ajax', 'Whitby', 'Oshawa', 'Newmarket', 'Aurora', 'Stouffville', 'Milton', 'Caledon',
 ];
+
+// Before / after pairs from real jobs. Files live in public/assets/img/work/
+// as ba-<name>.jpg + .webp; pass the name without the ba- prefix or extension.
+export const beforeAfter = [
+  { before: 'front-path-before', after: 'front-path-after', alt: 'garden path between snowbanks and a small evergreen, first knee-deep and then shovelled through' },
+  { before: 'car-drive-before', after: 'car-drive-after', alt: 'car in a driveway in front of a garage, snowed under and then dug out' },
+  { before: 'garage-before', after: 'garage-after', alt: 'driveway to a double garage blocked by a plow ridge, then cleared at dusk' },
+  { before: 'roof-before', after: 'roof-after', alt: 'low flat roof between brick walls, covered in snow and then cleared' },
+];
